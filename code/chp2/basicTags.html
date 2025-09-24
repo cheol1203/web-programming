@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic Tags</title>
+    <style>
+        td, th{
+            width:5em;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="firstH2">내가 좋아하는 간식</h2>
+    <dl>
+        <dt>라면</dt>
+        <dd>라면은 국수인데 꼬불꼬불하고 기름에 튀긴 것이다</dd>
+        <dt>떡볶이</dt>
+        <dd>떡볶이는 가는 가래떡인데 짧게 자른 것이다.</dd>
+            <ol>
+                <li>떡</li>
+                <li>고추장</li>
+            </ol>
+    </dl>
+    
+    <h2>강아지가 좋아하는 간식</h2>
+    <dl>
+        <dt>라면</dt>
+        <dd>라면은 국수인데 꼬불꼬불하고 기름에 튀긴 것이다</dd>
+        <dt>떡볶이</dt>
+        <dd>떡볶이는 가는 가래떡인데 짧게 자른 것이다.</dd>
+            <ol>
+                <li>떡</li>
+                <li>고추장</li>
+            </ol>
+    </dl>
+    
+    <table border="1">
+        <thead>
+            <tr><th>이름</th><th>고향</th><th>나이</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>홍길동</td><td>장성</td><td>50</td></tr>
+            <tr><td>심청</td><td>해남</td><td>20</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th colspan="2">평균나이</th><th>35.5</th></tr>
+        </tfoot>
+    </table>
+    
+    <h2>사이트 리스트</h2>
+    <hr>
+    <ul>
+        <li>
+            <a href="http://www.jnu.ac.kr" target="frame1">전남대</a>
+        </li>
+        <li>
+            <a href="http://www.naver.com" target="frame1">네이버</a>
+            <!-- 네이버에서 연결을 거부하는 이유는? 네이버 자체에서 거부하기 때문 -->
+        </li>
+    </ul>
+
+    <a href="#firstH2">처음으로</a> 하하하 <br>
+    <a href="../chp1/elvis.html">엘비스 페이지</a>
+    <!-- 하이퍼링크는 인라인 요소다 -->
+    <!--    하이퍼링크는
+            1. 인터넷에 있는 다른요소
+            2.문서내에서 특정한 요소
+            3. 내가 만든 페이지
+            로 접근할 수 있다-->
+    
+
+    <h2>프레임</h2>
+    <hr>
+    프레임
+    <iframe width="400" height="300" name="frame1" src="http://www.hani.co.kr"></iframe>
+    하하하  
+
+    <h2>멀티미디어</h2>
+    <hr>
+    <video controls>
+        <source src="../../media/sampleMovie.mp4" type="video/mp4"> <!-- type = "대분류/소분류" => MIME 타입-->
+        <!-- mpeg는 지원안하고 mp4는 지원함 -->
+        이 브라우저는 비디오 태그를 지원하지 않습니다.
+    </video>
+
+</body>
+</html>
+

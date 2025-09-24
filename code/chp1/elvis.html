@@ -1,0 +1,45 @@
+<!DOCTYPE html>  <!-- 문서 표준 html5 -->
+<html lang="en"> <!-- -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis</title>
+    <style>
+        h2 {
+            color: darkred;
+            text-align: center;
+        }
+        span {
+            color: green;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        function show() {
+            let img=document.querySelector('img');
+            img.src="../../media/elvis.jpg";
+            img.width="200"
+        }
+        function hide() {
+            let img=document.querySelector('img');
+            img.src="";
+        }
+    </script>
+</head>
+<body>
+    <h2 onmouseover="show();" onmouseout="hide()">Elvis Presley</h2>
+    <hr>
+    <img src="" alt="elvis presley image">
+    <p>
+        He was an American singer and actor. In november 1956,
+        he made his film debut in
+        <span>"Love me Tender"</span>.
+        &lt; br &gt; <!-- HTML entity-->
+    </p>
+    <p>
+        He is often
+        referred to as <span>"The King of Rock and Roll"</span>
+    </p>
+</body>
+</html>
