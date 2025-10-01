@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        div{
+            width: 10em;
+            height: 10em;
+            border: 1px solid blue;
+            float: left;
+        }
+        #imgDiv {
+            background-image: url("../../media/back.jpg");
+            background-size: 10em 10em;
+        }
+        #imgDiv:hover {
+            background-image: url("../../media/spade7.png");
+            background-size: 10em 10em;
+        }
+    </style>
+</head>
+<body>
+    <h2>:hover 활용</h2>
+    <hr>
+    <div>
+        마우스를 올리면 카드의 앞면이 보인다.
+    </div>
+    <div id="imgDiv">  
+    </div>
+</body>
+</html>
