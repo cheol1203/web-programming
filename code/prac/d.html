@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자기 소개서 작성</h2>
+    <hr>
+    <form>
+        <label for="a">사용자 ID : </label>
+        <input type="text" id="a"><br>
+        <label>비밀 번호 : <input type="password"></label>
+    </form>
+    <form>
+        색 선택
+	    <input type="color" value="#00BFFF" 
+				onchange="document.body.style.color=this.value">
+    </form>
+
+    <form>
+        <pre>
+            month :	<input type="month" value="2022-03"><br> 
+            week : 	<input type="week" value="2022-W09"><br>
+            data : 	<input type="date" value="2022-03-01"><br> 
+            time : 	<input type="time" value="21:30"><br>
+            local:	<input type="datetime-local" value="2022-03-01T21:30:10.32"><br>
+        </pre>
+    </form>
+
+    <form>
+	지속시간 (0.0~10.0시간) :
+	<input type="number" min="0.0" max="10.0" 
+							step="0.5"><br><br>
+	온도 설정 :10&deg;
+	<input type="range" min="10" max="30" 
+							list="temperatures">30&deg;
+	<datalist id="temperatures">
+		<option value="12" label="Low"></option>
+		<option value="20" label="Medium"></option>
+		<option value="28" label="High"></option>
+	</datalist>
+</form>
+
+    <form>
+        <input type="number" min="0.0" max="10.0" step="0.5">
+    </form>
+    <form>
+        <input type="range" min="0" max="10" list="b">
+        <datalist id="b">
+            <option value="2" label="low"></option>
+            <option value="5"></option>
+            <option value="8"></option>
+        </datalist>
+    </form>
+    <form>
+        <input type="search" placeholder="검색어">
+    </form>
+
+    <form>
+        <input type="email"><br>
+        <input type="tel"><br>
+        <input type="url"><br>
+        <input type="submit" value="제출">
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="email"><br>
+            홈페이지 : <input type="url"><br>
+            전화번호 : <input type="tel">
+        <small>질문</small>
+        </fieldset>
+    </form>
+</body>
+</html>
