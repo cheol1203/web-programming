@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>오전이면 lightskylue, 오후이면 orange 배경색</h2>
+    <script>
+        let hour = (new Date(2025, 11, 3, 11, 30, 20)).getHours();
+        if(hour<12){
+            document.body.style.backgroundColor='lightskyblue';
+        } else {
+            document.body.style.backgroundColor='orange';
+        }
+    </script>
+</body>
+</html>

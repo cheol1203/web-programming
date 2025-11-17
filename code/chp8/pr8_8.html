@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform:rotate()</title>
+    <script>
+    let scaleX = 1;
+
+    function enlarge(img) {
+        scaleX++;
+
+        if (scaleX > 4) scaleX = 2;  
+
+        img.style.transform = "scale(" + scaleX + ", 1)";
+    }
+</script>
+</head>
+<body>
+    <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+    <hr>
+    <img src="../../media/sponge.webp" width="150" onclick="enlarge(this)">
+</body>
+</html>

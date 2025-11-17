@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>문자 배열 다루기</h2>
+    <hr>
+    <script>
+        let names=['wonson', 'jaemoonlee', 'kitae', 'gracewhang'];
+        document.write("이름: " + names.join(" ") + "<br>");
+        document.write("가장 긴 이름: " + names.reduce((a, e)=>e.length>a.length? e:a, "") + "<br>");
+        /*let longest=names[0];
+        for(let i=1; i<names.length; i++){
+            if(names[i].length > longest.length){
+                longest=names[i];
+            }
+        }
+        document.write(longest+"<br>");*/
+        document.write("사전 순서로 가장 먼저 나오는 이름: " + names.sort()[0] + "<br>");
+        document.write("증가 순서 이름: " + names.join(" "));
+    </script>
+</body>
+</html>
