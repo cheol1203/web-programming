@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#details{
+            position: absolute;
+            border: 1px solid;
+            width: 70px;
+            visibility: hidden;
+            background-color: lightgray;
+        }
+    </style>
+    <script>
+        let msg1="서울 대전 부산을 돌아서 목포 광주를 거쳐 간다";
+        let msg2="HTML, CSS, JavaScript를 읽고 ReACT 공부";
+        let msg3="수영, 마라톤 10키로 달리기, 사격을 한다";
+        function hidemsg(){
+            let div=document.querySelector("#details");
+            div.innerHTML="";
+            div.style.visibility="hidden";
+        }
+        function showmsg(evt,msg){
+            let div=document.querySelector("#details");
+            div.innerHTML=msg;
+            div.style.top = evt.y + 'px';
+            div.style.left= evt.x + 'px';
+            div.style.visibility='visible';
+        }
+    </script>
+</head>
+<body>
+    <h2>아이템에 마우스를 올리면 설명 출력</h2>
+    <hr>
+    <p>여름 방학에 하고 싶은 것들</p>
+    <ul>
+        <li onmouseover="showmsg(event, msg1)" onmouseout="hidemsg();">자전거로 대한민국 일주</li>
+        <li onmouseover="showmsg(event, msg2)" onmouseout="hidemsg();">책 100권 읽기</li>
+        <li onmouseover="showmsg(event, msg3)" onmouseout="hidemsg();">철인 3종 경기</li>
+    </ul>
+    <div id="details"></div>
+</body>
+</html>

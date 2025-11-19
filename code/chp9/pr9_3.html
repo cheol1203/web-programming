@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        let exp = document.querySelector("#exp");
+        exp.onkeydown = function (evt) {
+          // console.log(`e.key: ${evt.key} e.code: ${evt.code}`);
+          if (evt.key == 'Enter') {
+            let res = document.querySelector("#result");
+            res.value = eval(evt.target.value).toFixed(2);
+          }
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h2>계산기 만들기</h2>
+    <hr />
+    <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요</p>
+    <form>
+      식: <input type="text" id="exp" /><br />
+      값: <input type="text" id="result" /><br />
+    </form>
+  </body>
+</html>
