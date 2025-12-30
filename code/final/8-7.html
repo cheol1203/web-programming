@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../media/sponge.webp" alt="" onclick="fun()" id="b">
+    <script>
+        let a = document.getElementById('b');
+        let n = 90;
+        function fun(){
+            a.style.transform=`rotate(${n}deg)`;
+            n+=90;
+            n%=360;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h2>z-index 스타일 프러퍼티</h2>
+    <hr>
+    <div>
+        <img src="../../media/spadeA.png" width="100" height="140">
+        <img src="../../media/spade3.png" width="100" height="140">
+        <img src="../../media/spade7.png" width="100" height="140">
+    </div>
+    <script>
+        let a = document.getElementsByTagName('img');
+        let n=0;
+        for(let i=0;i<a.length;i++){
+            a[i].style.zIndex=0;
+        }
+        for(let i=0;i<a.length;i++){
+            a[i].onclick=function(){
+                if(n%3==0){
+                    a[0].style.zIndex++;
+                }else if(n%3==1){
+                    a[1].style.zIndex++;
+                }else if(n%3==2){
+                    a[2].style.zIndex++;
+                }
+                n++;
+            }
+        }
+    </script>
+</body>
+</html>

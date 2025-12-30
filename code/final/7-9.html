@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>book 객체만들기</h3>
+    <hr>
+    <script>
+        /*let book = new Object();
+        book.title="HTML5";
+        book.author="황기태";
+        book.price=20000;*/
+        /*let book = {
+            title : "HTML5",
+            author : "황기태",
+            price : 20000
+        };*/
+       function Book(title,author,price){
+            this.title = title;
+            this.author = author;
+            this.price = price;
+            this.fuck=function(){};
+       }
+
+       let book = new Book("HTML5","황기태",20000);
+        document.write("book : " + book.title + ", " + book.author+ ", " + book.price);
+    </script>
+</body>
+</html>

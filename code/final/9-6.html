@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../media/apple.jpg" alt="" id="img">
+    <script>
+        let a = document.getElementById("img");
+        a.onwheel=function(e){
+            if(e.wheelDelta>0){
+                a.width=a.width*1.05;
+                a.height=a.height*1.05;
+            }else if(e.wheelDelta<0){
+                a.width=a.width*0.95;
+                a.height=a.height*0.95;
+            }
+        }
+    </script>
+</body>
+</html>

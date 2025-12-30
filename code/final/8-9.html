@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color: yellowgreen;" onclick="fun()">
+        <li>물을 끓인다.</li>
+    </ol>
+    <script>
+        let ol = document.getElementsByTagName('ol');
+        function fun(){
+            let li = document.createElement("li"); //fun안에 있어야함
+            li.innerHTML=prompt("입력하시오.");
+            ol[0].appendChild(li);
+        }
+    </script>
+</body>
+</html>

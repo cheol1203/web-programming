@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>바탕 아무 곳에나 더블 클릭</h3>
+    <hr>
+    더블클릭해
+    <script>
+        window.ondblclick=function(){
+            let r = Math.floor(Math.random()*256);
+            let g = Math.floor(Math.random()*256);
+            let b = Math.floor(Math.random()*256);
+            document.body.style.backgroundColor=`rgb(${r},${g},${b})`
+        }
+    </script>
+</body>
+</html>
